@@ -1,0 +1,33 @@
+from selenium.webdriver.common.by import By
+
+
+class Locators:
+    
+    LOGIN_REGISTER_BUTTON = (By.XPATH, "//button[contains(., 'Вход и регистрация')]")
+    NO_ACCOUNT_BUTTON = (By.XPATH, "//button[contains(., 'Нет аккаунта')]")
+    CREATE_ACCOUNT_BUTTON = (By.XPATH, "//button[contains(., 'Создать аккаунт')]")
+    LOGIN_BUTTON = (By.XPATH, "//button[contains(., 'Войти')]")
+    PLACE_AD_BUTTON = (By.XPATH, "//button[contains(., 'Разместить объявление')]")
+    PUBLISH_BUTTON = (By.XPATH, "//button[contains(., 'Опубликовать')]")
+    LOGOUT_BUTTON = (By.XPATH, "//button[text()='Выйти']")
+    EMAIL_INPUT = (By.NAME, "email")
+    PASSWORD_INPUT = (By.NAME, "password")
+    REPEAT_PASSWORD_INPUT = (By.NAME, "submitPassword")
+    EMAIL_FIELD_ERROR = (By.XPATH, "//div[contains(@class, 'input_inputError__fLUP9')]//input[@name='email']")
+    PASSWORD_FIELD_ERROR = (By.XPATH, "//div[contains(@class, 'input_inputError__fLUP9')]//input[@name='password']")
+    REPEAT_PASSWORD_FIELD_ERROR = (By.XPATH, "//div[contains(@class, 'input_inputError__fLUP9')]//input[@name='submitPassword']")
+    EMAIL_ERROR_MESSAGE = (By.XPATH, "//span[text()='Ошибка']")
+    USER_AVATAR = (By.CSS_SELECTOR, "button.circleSmall")
+    USER_NAME = (By.XPATH, "//h3[contains(@class, 'profileText')]")
+    AUTH_REQUIRED_MODAL = (By.XPATH, "//*[contains(text(), 'Чтобы разместить объявление, авторизуйтесь')]")
+    AD_NAME_INPUT = (By.XPATH, "//form//input[@name='name']")
+    AD_DESCRIPTION_INPUT = (By.XPATH, "//form//textarea[@name='description']")
+    AD_PRICE_INPUT = (By.XPATH, "//form//input[@name='price']")
+    CATEGORY_DROPDOWN = (By.XPATH, "//input[@name='category']/following-sibling::button")
+    CITY_DROPDOWN = (By.XPATH, "//input[@name='city']/following-sibling::button")
+    CATEGORY_OPTION_TECHNOLOGIES = (By.XPATH, "//button[contains(@class, 'dropDownMenu_btn')][.//span[text()='Технологии']]")
+    CITY_OPTION_SPB = (By.XPATH, "//button[contains(@class, 'dropDownMenu_btn')][.//span[text()='Санкт-Петербург']]")
+    CONDITION_NEW_INPUT = (By.XPATH, "//input[@name='condition' and @value='Новый']")
+    PROFILE_BUTTON = (By.CSS_SELECTOR, "button.circleSmall")
+    MY_ADS_BLOCK = (By.XPATH, "//*[contains(text(), 'Мои объявления')]")
+    AD_CARD = (By.XPATH, "//*[contains(text(), 'Тестовое объявление')]")
